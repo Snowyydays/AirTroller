@@ -21,11 +21,11 @@ struct AirTrollerApp: App {
                     }
                     
                     // Check if user has root access
-                    do {
-                        try FileManager.default.contentsOfDirectory(at: URL(fileURLWithPath: "/var/mobile"), includingPropertiesForKeys: nil)
-                    } catch {
-                        UIApplication.shared.alert(body: "The app needs to be installed either using TrollStore or on Jailbroken devices error: \(error)", withButton: false)
-                    }
+                    //do {
+                      //  try FileManager.default.contentsOfDirectory(at: URL(fileURLWithPath: "/var/mobile"), includingPropertiesForKeys: nil)
+                   // } catch {
+                      //  UIApplication.shared.alert(body: "The app needs to be installed either using TrollStore or on Jailbroken devices error: \(error)", withButton: false)
+                   // }
                 }
         }
     }
